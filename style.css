@@ -1,4 +1,87 @@
-#red 
+*
 {
+    width: 100px;
+    height: 100px;
+    text-align: center;
+}
+.scroll
+{
+    height: 1000px;
+}
+
+.parent
+{
+    width: 500px;
+    height: 500px;  
+    background-color: lightblue;
+
+    position: relative;
+}
+#red
+{
+    z-index: 2;  
     background-color: red;
+    transition: all 1s;
+
+    position: relative;
+    top: 20px;
+    left: 10px;
+}
+#red:hover
+{
+    top: 0px;
+    left: 0px;
+}
+#red_no_pos
+{ 
+    z-index: 1;
+    background-color: pink;
+
+    position: relative;
+    top: -100px;
+}
+#green
+{
+    background-color: green;
+    transition: all 3s;
+    
+    position: absolute;
+    top: 0px;
+    right: 0px;
+}
+#green:c
+{
+    right: 400px;
+}
+#orange
+{
+    background-color: orange;
+    
+    position: absolute;
+    left: 30px;
+    bottom: 50px;
+}
+#purple
+{
+    background-color: purple;
+    
+    position: absolute;
+    top: 200px;
+    right: 200px;
+}
+#green_4
+{
+    background-color: green;
+    
+    position: absolute;
+    top: 0px;
+    right: 0px;
+}
+#blue 
+{
+    background-color: blue;
+
+    position: fixed;
+    right: 10px;
+    bottom: 10px;
 }
